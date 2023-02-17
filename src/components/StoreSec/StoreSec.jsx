@@ -16,7 +16,7 @@ export const StoreSec = () => {
                 <CoffeCard img={laosBag} name='Laos Amanecer' price='9,00€' />
                 <CoffeCard img={etiopiaBag} name='Etiopía Yrgacheff' price='9,00€' />
             </div>
-            <ExtraLink text='Ver todo' color='' />
+            <ExtraLink text='Ver todo' color='' url='/store' />
         </section>
     )
 }
