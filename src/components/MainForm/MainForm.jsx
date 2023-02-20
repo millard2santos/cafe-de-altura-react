@@ -69,7 +69,7 @@ export const MainForm = () => {
                                 y los <span className="condition-span underline font-semibold">Términos y
                                     condiciones.</span></label>
                         </div>
-                        <input className="bg-green py-3 px-6 rounded w-[90px] text-white border-none font-semibold"
+                        <input className="bg-green py-3 px-6 rounded w-[90px] text-white border-none text-sm font-semibold"
                             type="submit" name="" id="" value="Enviar" />
                     </form>
                 </article>
