@@ -8,24 +8,29 @@ export const CoffeCard = ({ id,img, name, price, available }) => {
 
     const handleClick = () => {
 
-        setCart( prev => {
-            prev.totalQuantity += 1
-            prev.totalPrice += price 
-
-            if(prev.coffees[id]){
-                prev.coffees[id].quantity += 1
-            }else{
-                prev.coffees[id] = {
-                    name,
-                    price,
-                    quantity : 1
+        if(available){
+            setCart( prev => {
+                const holdPrev = {...prev}
+    
+                holdPrev.totalQuantity += 1
+                holdPrev.totalPrice += price 
+    
+                if(holdPrev.coffees[id]){
+                    holdPrev.coffees[id].quantity += 1
+                }else{
+                    holdPrev.coffees[id] = {
+                        id,
+                        name,
+                        price,
+                        img,
+                        quantity : 1
+                    }
                 }
-            }
-            console.log(prev);
-            return prev
-
-        })
-
+                
+                return holdPrev
+    
+            })
+        }
     }
 
 

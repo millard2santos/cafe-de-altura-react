@@ -34,7 +34,7 @@ export const NavBar = () => {
                 <div className="flex items-center gap-2">
                     <img src={bolsa} alt="" className="w-6 h-6" />
                     <div id="counterTop"
-                        className={`${cart.totalQuantity === 0 ? '' : ''} w-6 h-6 rounded-full justify-center flex items-center bg-grey text-xs`}>{cart.totalQuantity}</div>
+                        className={`${cart.totalQuantity === 0 ? 'hidden' : ''} w-6 h-6 rounded-full justify-center flex items-center bg-grey text-xs`}>{cart.totalQuantity}</div>
                 </div>
             </Link>
         </nav>
